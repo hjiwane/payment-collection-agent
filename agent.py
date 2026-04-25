@@ -231,9 +231,20 @@ def policy_node(state: ConversationState) -> dict[str, Any]:
         }
 
     if not state.get("account_id"):
+        user_input = (state.get("user_input") or "").strip().lower()
+        is_greeting = user_input in {
+            "hi",
+            "hello",
+            "hey",
+            "hii",
+            "good morning",
+            "good afternoon",
+            "good evening",
+        }
+
         return {
             "route": "respond",
-            "response_key": "ask_account_id",
+            "response_key": "greeting" if is_greeting else "ask_account_id",
             "response_kwargs": {},
         }
 

@@ -319,7 +319,7 @@ The evaluator also checks that sensitive data is not leaked in user-facing messa
 
 ```text
 User: Hi
-Agent: Please share your account ID to get started.
+Agent: Hello! I can help you with your payment. Please share your account ID to get started.
 
 User: ACC1001
 Agent: Got it. Please confirm your full name.
