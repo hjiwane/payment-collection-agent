@@ -1,0 +1,6 @@
+groq==0.37.1
+langgraph==1.1.4
+langgraph-checkpoint==4.0.1
+requests==2.33.1
+python-dotenv==1.2.2
+typing_extensions==4.15.0
